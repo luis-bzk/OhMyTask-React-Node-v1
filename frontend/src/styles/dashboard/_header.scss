@@ -1,0 +1,63 @@
+@use "../globals/variables" as v;
+
+.header {
+  background-color: v.$white;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: v.$tablet) {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    span {
+      color: v.$blue-600;
+    }
+  }
+
+  &__tasks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+    color: v.$gray-500;
+  }
+
+  .input-find-project {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    background-color: v.$slate-100;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+
+    transition: 0.15s;
+
+    &:hover {
+      transform: translateX(-2px) translateY(-2px);
+      box-shadow: 2px 2px 0 0 v.$slate-300;
+    }
+    &:active {
+      transform: translateX(0) translateY(0) scale(0.95);
+      box-shadow: none;
+    }
+
+    img {
+      width: 2.2rem;
+    }
+  }
+}

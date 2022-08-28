@@ -1,0 +1,101 @@
+@use "../globals/variables" as v;
+
+.new-collab {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .results {
+    border-radius: 1rem;
+    background-color: v.$white;
+    padding: 2rem 2rem;
+
+    .user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 1.5rem;
+      }
+
+      .button-add-collab {
+        all: unset;
+        border-radius: 5px;
+        background-color: v.$blue-500;
+        color: v.$white;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        transition: 0.2s;
+        box-shadow: 3px 3px 0px 0px v.$slate-300;
+
+        &:hover {
+          cursor: pointer;
+          background-color: v.$blue-600;
+        }
+        &:active {
+          transform: scale(0.95);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.form-collab {
+  border-radius: 10px;
+  background-color: v.$white;
+  padding: 2rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (min-width: v.$tablet) {
+      gap: 0;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    input {
+      all: unset;
+      border-radius: 5px;
+      background-color: v.$slate-100;
+      padding: 5px 1rem;
+    }
+  }
+
+  .button-ban {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button-email {
+      all: unset;
+      border-radius: 5px;
+      background-color: v.$blue-500;
+      color: v.$white;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: 0.2s;
+
+      @media (max-width: v.$tablet) {
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: v.$blue-600;
+      }
+    }
+  }
+}

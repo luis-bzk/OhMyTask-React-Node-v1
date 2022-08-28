@@ -1,0 +1,29 @@
+@use "../globals/variables" as v;
+
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: v.$desktop) {
+    flex-direction: row;
+  }
+
+  &__content {
+    padding: 2rem 1rem;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: v.$tablet) {
+      padding: 1rem 2rem;
+    }
+
+    @media (min-width: v.$desktop) {
+      height: 100vh;
+      overflow: scroll;
+    }
+  }
+}

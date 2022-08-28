@@ -1,0 +1,166 @@
+@use "../globals/variables" as v;
+
+// general content form box
+.auth-box {
+  background-color: v.$white;
+  border: none;
+  border-radius: 5px;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @media (min-width: v.$tablet) {
+    padding: 3rem 4rem;
+  }
+  @media (min-width: v.$desktop) {
+    padding: 4rem 6rem;
+  }
+
+  h2 {
+    text-align: center;
+    color: v.$blue-700;
+    margin-bottom: 3rem;
+
+    span {
+      color: v.$gray-500;
+    }
+  }
+
+  p {
+    color: v.$gray-500;
+    text-align: center;
+
+    a {
+      color: v.$blue-800;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// formulary
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+
+    .forgot-password {
+      color: v.$blue-800;
+      text-align: right;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .input-form {
+    border: none;
+    border-radius: 5px;
+    background-color: v.$blue-600;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: v.$white;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: v.$blue-700;
+    }
+  }
+}
+
+// input box
+.input-box {
+  width: 100%;
+  position: relative;
+
+  input {
+    outline: none;
+    border: none;
+    // border: 3px solid transparent;
+    border-radius: 10px;
+    width: 100%;
+
+    padding: 8px 14px;
+    background-color: v.$slate-200;
+    transition: 0.2s;
+
+    font-size: 1.6rem;
+  }
+
+  span {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 8px 14px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: v.$slate-500;
+    transition: 0.2s;
+  }
+
+  // effect
+  input:valid ~ span,
+  input:focus ~ span,
+  input:checked ~ span {
+    transform: translateY(-3rem);
+  }
+}
+
+// access part
+.access {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .input-google {
+    border: none;
+    border-radius: 5px;
+    border: 1px solid v.$slate-300;
+    background-color: v.$blue-100;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: v.$blue-700;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: v.$blue-200;
+    }
+  }
+
+  p {
+    color: v.$gray-500;
+    text-align: center;
+
+    a {
+      color: v.$blue-800;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

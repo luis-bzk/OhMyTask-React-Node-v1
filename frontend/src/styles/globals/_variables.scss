@@ -1,0 +1,58 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+$main-font: "Poppins", sans-serif;
+
+// media size
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1048px;
+
+// colors
+$white: rgb(255, 255, 255);
+$black: #171717;
+
+$green-300: #86efac;
+$green-600: #16a34a;
+
+$teal-600: #0d9488;
+
+$blue-50: #eff6ff;
+$blue-100: #dbeafe;
+$blue-200: #bfdbfe;
+$blue-300: #93c5fd;
+$blue-400: #60a5fa;
+$blue-500: #3b82f6;
+$blue-600: #2563eb;
+$blue-700: #1d4ed8;
+$blue-800: #1e40af;
+
+$cyan-100: #cffafe;
+
+$sky-200: #bae6fd;
+
+$slate-50: #f8fafc;
+$slate-100: #f1f5f9;
+$slate-200: #e2e8f0;
+$slate-300: #cbd5e1;
+$slate-400: #94a3b8;
+$slate-500: #64748b;
+$slate-600: #475569;
+$slate-800: #1e293b;
+
+$neutral-800: #262626;
+
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-400: #9ca3af;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+
+$indigo-500: #6366f1;
+$indigo-600: #4f46e5;
+
+$red-50: #fef2f2;
+$red-500: #ef4444;
+$red-600: #dc2626;
+
+$amber-500: #f59e0b;

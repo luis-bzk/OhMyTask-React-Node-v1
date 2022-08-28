@@ -1,0 +1,11 @@
+@use "../globals/variables" as v;
+.content-main {
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  // NEW set full in content dashboard piece
+  flex: 1;
+  position: relative;
+}

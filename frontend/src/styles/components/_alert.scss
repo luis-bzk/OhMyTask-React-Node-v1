@@ -1,0 +1,43 @@
+@use "../globals/variables" as v;
+
+.alert {
+  color: v.$red-500;
+  margin-top: 0.5rem;
+  &.abs {
+    animation-name: showAlertSmall;
+    animation-duration: 0.4s;
+
+    @media (min-width: v.$tablet) {
+      position: absolute;
+      top: -3.3rem;
+      // transform: translateY(-3rem);
+      right: 1rem;
+      animation-name: showAlertDesktop;
+      animation-duration: 0.4s;
+    }
+  }
+}
+
+@keyframes showAlertDesktop {
+  0% {
+    opacity: 0;
+    right: -2rem;
+  }
+
+  100% {
+    opacity: 1;
+    right: 1rem;
+  }
+}
+
+@keyframes showAlertSmall {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

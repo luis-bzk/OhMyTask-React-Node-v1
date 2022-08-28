@@ -1,0 +1,15 @@
+@use "../globals/variables" as v;
+
+// form
+.user-data {
+  .signup__box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: v.$desktop) {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@use "../globals/variables" as v;
+
+.project-search-modal {
+  position: relative;
+
+  width: 95%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+  // transform: translateY(-10rem);
+
+  background-color: v.$white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0 #6b7280;
+
+  .projects-search-finder {
+    display: flex;
+    flex-direction: column;
+    // gap: 2rem;
+    // background-color: blue;
+    position: relative;
+
+    // height: 90vh;
+    max-height: 90vh;
+
+    .input-search-project {
+      outline: none;
+      border: none;
+      width: 100%;
+      background-color: v.$white;
+      padding: 1.5rem;
+      font-size: 1.4rem;
+      font-family: v.$main-font;
+      color: v.$slate-600;
+    }
+
+    .filtered-projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border-radius: 10px;
+      background-color: v.$white;
+
+      // position: fixed;
+      width: 100%;
+      // top: 8rem;
+      // left: 0;
+      // height: 90%;
+      // max-height: 20rem;
+      overflow-y: scroll;
+
+      .project-find {
+        border-radius: 10px;
+        padding: 1rem;
+        font-weight: 500;
+        transition: 0.1s;
+        animation-name: showOptionProject;
+        animation-duration: 0.2s;
+
+        color: v.$slate-500;
+        &:hover {
+          background-color: v.$blue-600;
+          color: v.$white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@keyframes showOptionProject {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
