@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "../hooks";
 
 import { Spinner } from "../components/elements";
-import { Header, LeftSidebar } from "../components/ui";
+import { Header, MenuModalAside } from "../components/ui";
 
 export const ProtectedRouteLayout = () => {
   const { auth, loading } = useAuth();
@@ -17,7 +17,7 @@ export const ProtectedRouteLayout = () => {
     <>
       {auth._id ? (
         <div className="dashboard">
-          <LeftSidebar />
+          <MenuModalAside />
 
           <div className="dashboard__content">
             <Header />

@@ -1,5 +1,7 @@
 export * from "./Header.jsx";
+export * from "./MenuModalAside.jsx";
 export * from "./LeftSidebar.jsx";
+export * from "./ModalMenuMobile.jsx";
 export * from "./FormProject.jsx";
 export * from "./PreviewProject.jsx";
 export * from "./CardProjMenu.jsx";
