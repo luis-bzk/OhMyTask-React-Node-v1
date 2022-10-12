@@ -5,4 +5,4 @@ The current project uses `REACT` on the Frontend, separate from a Backend made i
 The purpose of the project is to create a system that allows you to create projects and tasks, where you can add collaborators registered in the system to your project.
 
 ## url
-> https://sensational-douhua-11c3fd.netlify.app/dashboard
+> https://sensational-douhua-11c3fd.netlify.app/
