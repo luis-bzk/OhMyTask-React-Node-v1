@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useProjects } from "../../hooks";
+import { useState } from 'react';
+import { useProjects } from '../../hooks';
 
 export const ProgressBar = () => {
   const [style, setStyle] = useState({});
@@ -16,9 +16,12 @@ export const ProgressBar = () => {
   }, 800);
 
   return (
-    <div className="progressbar">
-      <p className="progressbar-done-p">{tasksCompleted}%</p>
-      <div className="progressbar-done" style={style} />
+    <div className='progressbar'>
+      <p className='progressbar-done-p'>{tasksCompleted ? tasksCompleted : '0'}%</p>
+      <div
+        className='progressbar-done'
+        style={style}
+      />
     </div>
   );
 };
