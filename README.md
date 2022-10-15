@@ -2,6 +2,11 @@
 THE REMASTER OF THE COMPLETE PROJECT WILL BE CARRIED OUT WITH BEST PRACTICES AND MOST ADVANCED TECHNOLOGIES.
 ONCE IT IS READY, IT WILL BE RELEASED TO THE PUBLIC.
 
+
+### WHY DELETE
+I have learned new technologies in this time and I have been able to see that I have not used good development practices in the most efficient way, as well as not using more advanced technologies. I hope soon to launch a project that is far superior to this one.
+I am currently developing it.
+
 ### OHMYTASK
 
 This project is a total reconstruction of a project already done, in the previous project I used `JavaScript`, `PHP8`, `SASS` and `MySQL`.
